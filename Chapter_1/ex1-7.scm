@@ -14,11 +14,9 @@
 (define (good-enough-original? guess x)
  (< (abs (- (square guess) x)) 0.001))
 
-
 ; Improved good-enough? function
 (define (good-enough? guess x)
   (define newGuess (improve guess x))
-  ;(< (abs (- guess newGuess)) .001))
   (< (/ (abs (- guess newGuess)) guess) .001))
 
 ; Newton's Method for approximating square roots.
