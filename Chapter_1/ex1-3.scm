@@ -1,3 +1,4 @@
+; 6/16/2017
 ; Ex. 1.3
 ; Define a procedure that takes 3 numbers and return the sum
 ; of the two larger numbers
