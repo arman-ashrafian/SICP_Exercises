@@ -29,7 +29,7 @@
   (sqrt-iter 1.0 x))
 
 ; Testing
-(sq-rt (* 0.00005 0.00005))  ; this works now (:
+(sq-rt (* 0.00005 0.00005))
 (sq-rt 2)
 (sq-rt 5)
 (sq-rt 9)

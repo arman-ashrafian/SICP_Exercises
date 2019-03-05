@@ -4,11 +4,14 @@
 ; of the two larger numbers
 
 (define (sumBigger x y z)
-  (cond ((and (> x z) (> y z)) (+ (* x x) (* y y)))
-        ((and (> x y) (> z y)) (+ (* x x) (* z z)))
-        ((and (> y x) (> z x)) (+ (* y y) (* z z)))
-        (else (+ (* x x) (* y y))) ; x = y =z
-        ))
+  (cond ((and (> x z) (> y z)) 
+            (+ (* x x) (* y y)))
+        ((and (> x y) (> z y)) 
+            (+ (* x x) (* z z)))
+        ((and (> y x) (> z x)) 
+            (+ (* y y) (* z z)))
+        (else 
+            (+ (* x x) (* y y))))) ; x = y = z
 
 ; Testing
 (sumBigger 1 2 3)   ; 13
