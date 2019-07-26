@@ -7,6 +7,9 @@
        angle
        (p (sine (/ angle 3.0)))))
 
+(display (sine 12.15))
+(newline)
+
 ; 1) How many times is the procedure p applied when (sine 12.15) is evaluated?
 
 ;    (sine 12.15) 
