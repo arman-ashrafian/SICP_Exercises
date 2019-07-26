@@ -10,7 +10,7 @@
           a)
         ((even? b) 
           (fast-mult (double a) (halve b)))
-        ((odd? b)
+        (else
           (+ a (fast-mult a (- b 1))))))
 
 
