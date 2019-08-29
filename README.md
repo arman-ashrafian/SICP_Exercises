@@ -30,3 +30,15 @@ Will update this repo with solutions as I read through SICP.
   (cond ((< x 0) (- x))   ; (cond ((p1) (e1))
         (else x)))        ;       (else (e2))
 ```
+
+## Installation
+
+1. Download Racket
+2. Add Racket to `$PATH`
+3. Add the following to your ~/.bashrc
+
+```
+alias sicp='racket -p neil/sicp -f '
+alias sicpi='racket -p neil/sicp -i '
+```
+Now `sicp file.scm` will execute the file and `sicpi` will start the repl
