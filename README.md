@@ -31,6 +31,19 @@ Will update this repo with solutions as I read through SICP.
         (else x)))        ;       (else (e2))
 ```
 
+### local variables 
+declare local variables using `let` (syntactic sugar for creating a lambda with parameters that executes immediately
+
+```scheme
+; f(x,y) = x(1+xy) + y(1-y) + (1+xy)(1-y)
+(define (f x y)
+  (let ((a (+ 1 (* x y)))
+        (b (- 1 y)))
+    (+ (* x a)
+       (* y b)
+       (* a b))))
+```
+
 ## Installation
 
 1. Download Racket
